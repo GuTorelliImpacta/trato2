@@ -38,11 +38,6 @@ export const hours: Record<number, Slot[]> = {
 export const dayNames = ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"];
 export const schemaDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-export type MenuItem = { name: string; description: string; category: "Burgers" | "Parrilla" | "Porções" | "Bebidas"; price?: string };
-/** Preencher com itens reais do cardápio. Vazio = a seção mostra fotos e o link do iFood. */
-export const menuItems: MenuItem[] = [];
-export const menuCategories = ["Burgers", "Parrilla", "Porções", "Bebidas"] as const;
-
 export const copy = {
   hero: {
     h1: "Hambúrguer e carnes na parrilla a carvão, em Tremembé.",
@@ -50,12 +45,11 @@ export const copy = {
   },
   fogo: {
     title: "Tudo passa pela parrilla a carvão.",
-    text: "Aqui a carne vai para a brasa. Hambúrguer artesanal, carnes e frango assados e churrasco, feitos na parrilla a carvão.",
+    text: "Aqui a carne vai para a brasa. Hambúrguer artesanal, cortes produzidos na casa (gado Angus), espetos, frango assado e churrasco, feitos na parrilla a carvão. A costelinha e o brisket são defumados com lenha de maçã.",
   },
   menu: {
     title: "O que sai da brasa",
-    note: `Faixa de preço: ${site.price} (informado por clientes no Google).`,
-    emptyText: "Burgers artesanais, carnes e frango assados e churrasco. O cardápio completo, com preços atualizados, fica no iFood.",
+    note: `Do prato do dia aos cortes especiais, dos espetos aos drinks. Faixa de preço: ${site.price} (informado por clientes no Google).`,
   },
   casa: {
     title: "Casa de bairro, fogo de verdade",
@@ -72,6 +66,8 @@ export const copy = {
   },
   faq: [
     { q: "Tem delivery?", a: "Sim, pelo iFood. Use o botão “Fechar o trato”." },
-    { q: "Qual a faixa de preço?", a: `${site.price}, segundo clientes no Google.` },
+    { q: "Qual a faixa de preço?", a: `${site.price}, segundo clientes no Google. O prato do dia fica na faixa de R$ 30 a R$ 44.` },
+    { q: "Os cortes vêm com acompanhamento?", a: "Sim. Cada corte especial vem com dois acompanhamentos à escolha." },
+    { q: "Tem opção vegetariana?", a: "Os espetos de pão de alho, queijo coalho e mussarela defumada são vegetarianos, além de acompanhamentos como berinjela italiana e abobrinha defumada." },
   ],
 };

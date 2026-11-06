@@ -195,3 +195,8 @@ Sem foto adequada: placeholder preto sóbrio com a gota do logo, nunca imagem de
 - Instagram @tratobutter — https://www.instagram.com/tratobutter (429, não acessado).
 - Mocotó — https://mocoto.com.br/ · D.O.M. — https://domrestaurante.com.br/ · Fasano — https://www.fasano.com.br/ (verificados ao vivo em 2026-11-06).
 - Prints Google Maps, horários, logo, fotos: enviados pelo usuário em 2026-11-06.
+
+## Adendo 2026-11-06 — cardápio real
+Fonte: 3 fotos do menu impresso da casa publicadas no Google (≈ 2 anos; prints enviados pelo usuário). Transcrito em `src/content/menu.ts`: Dia a dia, Cortes especiais, Entradas, American BBQ + Espetos, Acompanhamentos e molhos, Drinks, Sobremesas. UI: "Mais pedidos" (itens com ★ no menu) + abas, sem foto de comida por item.
+- `[CONFIRMAR]` preços (foto antiga) e se os hambúrgueres estão em outra página do menu: **nenhuma das 3 páginas traz burgers**.
+- Horários impressos no menu (11:30–15:30 almoço; jantar 18:00–22:00 ter–dom; seg sem jantar; sáb/dom almoço até 17:00) diferem do Google (08:00) e do Guia do Hambúrguer: manter o Google até o dono confirmar.

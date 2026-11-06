@@ -13,6 +13,7 @@ const jsonLd = {
   telephone: "+551129961767",
   image: `${site.url}/img/burger-bacon.webp`,
   servesCuisine: ["Hambúrguer", "Churrasco", "Grelhados"],
+  hasMenu: `${site.url}/#cardapio`,
   priceRange: "R$ 40–80",
   address: {
     "@type": "PostalAddress",
@@ -50,8 +51,8 @@ export default function Home() {
       </section>
 
       <section id="fogo" className="bg-black py-20 md:py-28">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 md:grid-cols-2">
-          <Image src="/img/carne-fatiada.webp" alt="Carne grelhada fatiada, rosada no centro, sobre tábua escura" width={768} height={1045} sizes="(min-width:768px) 40vw, 90vw" className="mx-auto max-h-[560px] w-auto object-cover" />
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 grid-cols-1 md:grid-cols-2">
+          <Image src="/img/carne-fatiada.webp" alt="Carne grelhada fatiada, rosada no centro, sobre tábua escura" width={768} height={1045} sizes="(min-width:768px) 40vw, 90vw" className="mx-auto h-auto max-h-[560px] w-auto max-w-full object-cover" />
           <div>
             <h2 className="font-display text-3xl font-bold md:text-5xl">{copy.fogo.title}</h2>
             <p className="mt-5 max-w-lg text-lg text-white/80">{copy.fogo.text}</p>
@@ -62,9 +63,12 @@ export default function Home() {
       <MenuSection />
 
       <section id="a-casa" className="bg-black py-20 md:py-28">
-        <div className="mx-auto max-w-3xl px-5">
-          <h2 className="font-display text-3xl font-bold md:text-5xl">{copy.casa.title}</h2>
-          <p className="mt-5 text-lg text-white/80">{copy.casa.text}</p>
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 grid-cols-1 md:grid-cols-2">
+          <div>
+            <h2 className="font-display text-3xl font-bold md:text-5xl">{copy.casa.title}</h2>
+            <p className="mt-5 max-w-lg text-lg text-white/80">{copy.casa.text}</p>
+          </div>
+          <Image src="/img/burger-fritas.webp" alt="Hambúrguer com bacon e queijo servido com porção de fritas" width={1206} height={1052} sizes="(min-width:768px) 45vw, 90vw" className="h-auto w-full max-w-full object-cover" />
         </div>
       </section>
 
