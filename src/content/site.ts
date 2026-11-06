@@ -1,6 +1,6 @@
 export const site = {
   name: "Trato & Butter",
-  url: "https://trato2.vercel.app",
+  url: "https://trato-e-butter.vercel.app",
   phone: "(11) 2996-1767",
   phoneHref: "tel:+551129961767",
   instagram: "https://www.instagram.com/tratobutter",
